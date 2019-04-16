@@ -1,10 +1,12 @@
 #include "TextField.h"
+#include "FpRenderIf.h"
 #include <stdio.h> // snprintf()
 
+using namespace gfxWidget;
 
 TextField::TextField(   const fp::gfx::Coord&    upLeftPos,
                         const fp::gfx::Size2D&   size,
-                        const fp::GFXfont&           rFont,
+                        const fp::GfxFont&           rFont,
                         uint8_t                      fontScaleFactor,
                         const fp::ColorRGB& color,
                         HPlacement                   hPlacement,
@@ -102,7 +104,7 @@ void TextField::setVPlacement(VPlacement vPlacement)
     m_vPlacement = vPlacement;
 }
 
-void TextField::setFont(const fp::GFXfont& font, uint8_t scale)
+void TextField::setFont(const fp::GfxFont& font, uint8_t scale)
 {
     m_pFont = &font;
     m_fontScaleFactor = scale;

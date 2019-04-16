@@ -9,4 +9,4 @@ add_library(FrontPanelIOSimpleGraphicWidgets
 )
 
 target_include_directories(FrontPanelIOSimpleGraphicWidgets PUBLIC ${CMAKE_CURRENT_LIST_DIR})
-target_link_libraries(FrontPanelIOSimpleGraphicWidgets FpBase)
+target_link_libraries(FrontPanelIOSimpleGraphicWidgets FpBase FpGfx)
